@@ -1,10 +1,10 @@
-import React from "react";
-
+import phoneIcon from '@assets/images/header/phone.svg'
 export const PhoneNumber = ()=>{
 
     return(
-       <div className="text">
-        87083731342
-       </div>
+        <div>
+            <img src={phoneIcon} alt='call' />
+            <p>Номер телефона</p>
+        </div>
     )
 }
