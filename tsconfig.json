@@ -15,6 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "types": ["node"],
     "baseUrl": ".",
     "paths": {
         // 2 раза со свездой и без нужно указывать потому что если указать только как @lib/* то import { something } from '@lib' будет давать ошибку
