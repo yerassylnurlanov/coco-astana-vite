@@ -1,9 +1,8 @@
 import { Navbar } from "./organisms/navbar"
-import { SearchForm } from "./organisms/search"
+import { SearchForm } from "../search/search"
 export const Header = ()=>{
     return(
-        <div className="fixed z-15  w-screen">
+        <div className="fixed z-15 w-full">
             <Navbar />
-            <SearchForm/>
         </div>)
 }
