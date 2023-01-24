@@ -1,12 +1,14 @@
 // import { SearchForm } from "@/features/search/search"
-import { SearchForm } from "src/features/search/search"
-import { PopularCategories } from "./organisms/popular-categories"
+import { SearchForm } from "@/features/search/search"
+import { PopularCategories } from "./organisms/popular-categories/popular-categories"
+import { Advantages } from "@/features/advantages"
 
 export const MainPage = ()=>{
     return(
-        <div className="max-w-2xl pt-20 m-auto">
+        <div className="max-w-4xl pt-20 m-auto">
             <SearchForm  />
             <PopularCategories />
+            <Advantages />
         </div>
     )
 }
