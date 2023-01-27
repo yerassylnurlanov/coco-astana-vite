@@ -1,30 +1,35 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "types": ["node"],
-    "baseUrl": ".",
-    "paths": {
-        // 2 раза со свездой и без нужно указывать потому что если указать только как @lib/* то import { something } from '@lib' будет давать ошибку
-        // https://stackoverflow.com/questions/57540642/paths-declared-in-tsconfig-do-not-resolve-properly-without-index-ts-in-import
-        // дублировать нужно только в том случае если в папке есть главный index.ts который что то экспортит как в апи или в lib
-      "@/*": ["./src"]
-    }
-  },
-  "include": ["./src"],
-  "exclude": ["build", "node_modules"],
-  "references": [{ "path": "./tsconfig.node.json" }]
-}
+    "compilerOptions": {
+      "target": "ESNext",
+      "useDefineForClassFields": true,
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "allowJs": false,
+      "skipLibCheck": true,
+      "esModuleInterop": false,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "baseUrl": ".",
+      "paths": {
+          // 2 раза со свездой и без нужно указывать потому что если указать только как @lib/* то import { something } from '@lib' будет давать ошибку
+          // https://stackoverflow.com/questions/57540642/paths-declared-in-tsconfig-do-not-resolve-properly-without-index-ts-in-import
+          // дублировать нужно только в том случае если в папке есть главный index.ts который что то экспортит как в апи или в lib
+          "@features/*": ["./src/features/*"],
+          "@assets/*": ["./src/assets/*"],
+          "@lib/*": ["src/lib/*"],
+          "@api/*": ["src/api/*"],
+          "@ui/*": ["src/ui/*"],
+          "@pages/*": ["src/pages/*"],
+
+      }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["build", "node_modules"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+  }
