@@ -1,8 +1,9 @@
-import { Navbar } from "./organisms/navbar"
-import { SearchForm } from "../search/search"
-export const Header = ()=>{
-    return(
-        <div className="fixed z-15 w-full">
+import { Navbar } from './organisms/navbar';
+import { SearchForm } from '../search';
+export const Header = () => {
+    return (
+        <div className="fixed z-10 w-full">
             <Navbar />
-        </div>)
-}
+        </div>
+    );
+};

@@ -1,4 +1,4 @@
-import phoneIcon from '@/assets/images/header/phone.svg'
+import phoneIcon from '@assets/images/header/phone.svg'
 export const PhoneNumber = ()=>{
 
     return(
