@@ -26,6 +26,8 @@
           "@api/*": ["src/api/*"],
           "@ui/*": ["src/ui/*"],
           "@pages/*": ["src/pages/*"],
+          "@store/*":["src/store/*"],
+          "@store":["src/store"]
 
       }
     },

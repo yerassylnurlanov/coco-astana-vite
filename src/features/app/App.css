@@ -3,15 +3,47 @@
 @tailwind components;
 @tailwind utilities;
 
-.navbar{
-    background-color: #f5f5f5;
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 200;
+    src: url('@assets/fonts/Oswald-ExtraLight.ttf') format('truetype'); /* Safari, Android, iOS */
 }
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 300;
+    src: url('@assets/fonts/Oswald-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 400;
+    src: url('@assets/fonts/Oswald-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 500;
+    src: url('@assets/fonts/Oswald-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 600;
+    src: url('@assets/fonts/Oswald-SemiBold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 600;
+    src: url('@assets/fonts/Oswald-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+html{
+    font-family: 'Oswald';
+}
+
 h2 {
     display: block;
     font-size: 1.5em;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
-    font-weight: bold;
+    font-weight: semi-bold;
 }
 
 h4 {
@@ -20,3 +52,9 @@ h4 {
     margin-bottom: 1.33em;
     font-weight: bold;
 }
+p, span, a{
+    font-size: 1rem;
+}
+
+
+
